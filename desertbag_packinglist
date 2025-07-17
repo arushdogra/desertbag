@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DESERT BAG - Packing List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>        
+        .packing-container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+body {
+            background-image: url('https://i0.wp.com/travelwithme247blog.com/wp-content/uploads/2024/01/funky-desert-captions.jpg?resize=940%2C788&ssl=1');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--soft-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--desert-brown);
+        }
+
+        .logo img {
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--desert-brown);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(230, 126, 34, 0.1);
+            color: var(--sunset-orange);
+        }
+
+        .nav-links a.active {
+            background: rgba(230, 126, 34, 0.2);
+        }
+
+        .packing-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: var(--soft-shadow);
+        }
+
+        .packing-category {
+            margin-bottom: 2rem;
+        }
+
+        .packing-category h3 {
+            color: var(--desert-brown);
+            border-bottom: 2px solid var(--sunset-orange);
+            padding-bottom: 0.5rem;
+        }
+
+        .packing-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            box-shadow: var(--soft-shadow);
+        }
+
+        .packing-item input {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="C:\Hackthon proj\DESERT BAG.jpg" height="40px" width="40px"> 
+            <span>Desert Bag</span>
+        </div>
+        <div class="nav-links">
+            <a href="desertbag.html" class="nav-link">HOME</a>
+            <a href="weather.html" class="nav-link">WEATHER</a>
+            <a href="survival.html" class="nav-link">SURVIVAL GUIDE</a>
+            <a href="packing.html" class="nav-link active">PACKING LIST</a>
+            <a href="resource.html" class="nav-link"> RESOURCE </a>
+            <a href="signinn.html">SIGN IN</a>
+            <a href="map.html" class="nav-link"> MAP </a>
+            <a id="logoutBtn" style="display:none;" href="#logout">LOGOUT</a>
+            
+        </div>
+    </nav>
+
+    <main class="packing-container">
+        <div class="packing-card">
+            <h1>Desert Packing List</h1>
+            
+            <div class="packing-category">
+                <h3>Essential Gear</h3>
+                <div class="packing-item">
+                    <input type="checkbox" id="item1">
+                    <label for="item1">Water containers (min 6 litres per person)</label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item2">
+                    <label for="item2">Water purification tablets or filter</label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item3">
+                    <label for="item3">High SPF sunscreen </label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item4">
+                    <label for="item4">Hydration pack or bladder </label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item5">
+                    <label for="item5"> Electrolyte tablets </label>
+                </div>
+
+
+                
+            </div>
+            
+            <div class="packing-category">
+                <h3>Clothing</h3>
+                <div class="packing-item">
+                    <input type="checkbox" id="item6">
+                    <label for="item6">Lightweight, long-sleeved shirts and pants</label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item7">
+                    <label for="item7">Wide-brimmed hat with neck protection</label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item8">
+                    <label for="item8">Bandana </label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item9">
+                    <label for="item9">UV blocking sunglasses </label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item10">
+                    <label for="item10">Neck gaiter </label>
+                </div>
+
+
+            </div>
+            
+            <div class="packing-category">
+                <h3>Navigation & Safety</h3>
+                <div class="packing-item">
+                    <input type="checkbox" id="item11">
+                    <label for="item11">Compas</label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item12">
+                    <label for="item12">GPS device or smartphone with offline maps</label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item13">
+                    <label for="item13">First aid kit with snake bite supplies</label>
+                </div>
+                <div class="packing-item">
+                    <input type="checkbox" id="item14">
+                    <label for="item14">Satellite phone or PLB </label>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
