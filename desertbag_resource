@@ -29,7 +29,6 @@
             margin: 0 auto;
         }
 
-        /* Header and Auth Styles */
         .header {
             display: flex;
             justify-content: space-between;
@@ -358,14 +357,14 @@
 
         auth.onAuthStateChanged((user) => {
             if (user) {
-                // User is logged in
+                
                 userEmailSpan.textContent = user.email;
                 authInfo.style.display = 'flex';
                 loggedInContent.style.display = 'block';
                 loginPrompt.style.display = 'none';
                 loadResources();
             } else {
-                // User is logged out
+                
                 authInfo.style.display = 'none';
                 loggedInContent.style.display = 'none';
                 loginPrompt.style.display = 'block';
