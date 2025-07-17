@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DESERT BAG - Survival Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>        
+        .survival-container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+body {
+            background-image: url('https://i0.wp.com/travelwithme247blog.com/wp-content/uploads/2024/01/funky-desert-captions.jpg?resize=940%2C788&ssl=1');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--soft-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--desert-brown);
+        }
+
+        .logo img {
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--desert-brown);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(230, 126, 34, 0.1);
+            color: var(--sunset-orange);
+        }
+
+        .nav-links a.active {
+            background: rgba(230, 126, 34, 0.2);
+        }
+
+        .survival-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: var(--soft-shadow);
+        }
+
+        .survival-section {
+            margin-bottom: 2rem;
+        }
+
+        .survival-section h3 {
+            color: var(--desert-brown);
+            border-bottom: 2px solid var(--sunset-orange);
+            padding-bottom: 0.5rem;
+        }
+
+        .survival-tip {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: var(--soft-shadow);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="C:\Hackthon proj\DESERT BAG.jpg" height="40px" width="40px"> 
+            <span>Desert Bag</span>
+        </div>
+        <div class="nav-links">
+            <a href="desertbag.html" class="nav-link">HOME</a>
+            <a href="weather.html" class="nav-link">WEATHER</a>
+            <a href="survival.html" class="nav-link active">SURVIVAL GUIDE</a>
+            <a href="packing.html" class="nav-link">PACKING LIST</a>
+            <a href="resource.html" class="nav-link"> RESOURCE </a>
+            <a href="signinn.html">SIGN IN</a>
+            <a href="map.html" class="nav-link"> MAP </a>
+            <a id="logoutBtn" style="display:none;" href="#logout">LOGOUT</a>
+            
+        </div>
+    </nav>
+
+    <main class="survival-container">
+        <div class="survival-card">
+            <h1>Desert Survival Guide</h1>
+            
+            <div class="survival-section">
+                <h3>Essential Tips</h3>
+                <div class="survival-tip">
+                    <h4>Water Conservation</h4>
+                    <p>Carry at least 6 litres of water per person per day. Drink small amounts regularly rather than large quantities at once.</p>
+                </div>
+                <div class="survival-tip">
+                    <h4>Sun Protection</h4>
+                    <p>Wear loose, light-colored clothing, a wide-brimmed hat, and UV-protection sunglasses. Apply high-SPF sunscreen regularly.</p>
+                </div>
+                <div class="survival-tip">
+                    <h4>Travel Timing</h4>
+                    <p>Move during cooler morning and evening hours. Rest in shade during the hottest parts of the day (10am-4pm).</p>
+                </div>
+            </div>
+            
+            <div class="survival-section">
+                <h3>Navigation</h3>
+                <div class="survival-tip">
+                    <h4>Using the Sun</h4>
+                    <p>In the Northern Hemisphere, the sun will be in the southern part of the sky. A stick's shadow can help determine direction.</p>
+                </div>
+                <div class="survival-tip">
+                    <h4>Night Navigation</h4>
+                    <p>Learn to identify the North Star (Polaris) in the Northern Hemisphere for night navigation.</p>
+                </div>
+            </div>
+            
+            <div class="survival-section">
+                <h3>Emergency Situations</h3>
+                <div class="survival-tip">
+                    <h4>Dehydration Symptoms</h4>
+                    <p>Watch for dark urine, dizziness, fatigue, and dry mouth. These are early signs you need to rehydrate immediately.</p>
+                </div>
+                <div class="survival-tip">
+                    <h4>Heat Stroke</h4>
+                    <p>Recognize symptoms: hot/dry skin, confusion, rapid pulse. Cool the person immediately and seek help.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
